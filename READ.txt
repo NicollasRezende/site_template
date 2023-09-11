@@ -1,0 +1,5 @@
+Copyright (c) 2023 Nicollas Pereira, Samuel Ribeiro, NK_dev.
+
+This code is licensed under the MIT license.
+
+/* NK_dev */
