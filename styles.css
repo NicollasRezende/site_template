@@ -1,443 +1,140 @@
-/* NK_dev */
+/* Cores */
+:root {
+    --primary: #612F74;
+    --bg: #F2F2F2;
+}
 
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/info.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/website.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/phone.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/folder.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css');
-
-/* NK_dev */
-/* Estilos para o corpo da página */
+/* Tipografia */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #232420;
-    /* Cor de fundo principal #232420 */
-    color: #fff;
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Estilos para o cabeçalho */
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Cabeçalho */
 header {
-    background-image: url('service1.png');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    /* Para cobrir todo o cabeçalho */
-    background-position: center;
-    /* Centralize a imagem */
-    text-align: center;
-    padding: 4rem 0;
-    /* Aumente o espaço superior e inferior para tornar o cabeçalho mais alto */
+    background-color: var(--primary);
     color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 header h1 {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 3rem;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav a {
+    font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav a i {
+    color: #8c62aa;
+    transform: rotate(0deg);
+    transition: .3s;
 }
 
-nav ul li a {
+nav a:hover i {
+    transform: translateY(-3px);
+    transform: rotate(90deg);
+}
+
+/* Conteúdo */
+section {
     color: #fff;
-    text-decoration: none;
-}
-
-/* Adicione sombreadores sutis às seções */
-.section {
-    padding: 4rem 0;
-    text-align: center;
-    border: 2px solid #232420;
+    padding: 3rem;
     border-radius: 10px;
-    background-color: rgba(31, 14, 58, 0.2);
-    margin: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra com desfoque suave */
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #2b2b2b;
+    margin: 1rem auto;
+    max-width: 800px;
 }
 
+/* Caixas de serviço */
 
-
-/* Adicione bordas arredondadas aos botões e aos botões de projeto */
-.btn,
-.project-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 2px solid #3498db;
-}
-
-.btn:hover,
-.project-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 2px solid #2980b9;
-}
-
-/* Adicione espaçamento entre as seções */
-.section:not(:first-child) {
-    margin-top: 40px;
-}
-
-/* Estilos para o rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(31, 14, 58, 0.2);
-    /* Cor de fundo do rodapé */
-    color: #fff;
-    /* Cor do texto no rodapé */
-}
-
-/* Estilos para a frase "Todos os direitos reservados" */
-footer p {
-    font-size: 1rem;
-    /* Tamanho do texto */
-    margin: 0;
-    /* Remover margem padrão */
-}
-
-/* Estilos para o link no rodapé (opcional) */
-footer a {
-    color: #3498db;
-    /* Cor do link no rodapé */
-    text-decoration: none;
-    /* Remover sublinhado do link */
-}
-
-/* Estilos para o link no rodapé no hover (opcional) */
-footer a:hover {
-    text-decoration: underline;
-    /* Adicionar sublinhado no hover do link */
-}
-
-
-/* Estilize o título da seção "Projetos" */
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #3498db;
-}
-
-/* Adicione um sombreador às imagens dos projetos nos botões */
-.project-button img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para a seção "Bem-vindo" */
-#welcome {
-    background-image: url('service1.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-#welcome h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#welcome p {
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-}
-
-#welcome .btn {
-    background-color: #3498db;
-    color: #fff;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#welcome .btn:hover {
-    background-color: #2980b9;
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Estilos para a seção "Sobre Nós" */
-#sobre {
-    background-color: #34495e;
-    /* Cor de fundo para a seção "Sobre Nós" */
-    color: #fff;
-    /* Cor do texto */
-}
-
-#sobre h2 {
-    font-size: 2rem;
-    /* Tamanho do título */
-    margin-bottom: 20px;
-    /* Espaçamento inferior */
-    color: #3498db;
-    /* Cor do título */
-}
-
-#sobre p {
-    font-size: 1.2rem;
-    /* Tamanho do texto */
-    line-height: 1.6;
-    /* Espaçamento entre linhas */
-}
-
-/* Estilize a seção "Sobre Nós" */
-#sobre {
-    padding: 4rem 0;
-    /* Espaçamento interno superior e inferior */
-}
-
-/* Adicione um box-shadow sutile ao redor da seção */
-#sobre {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 20px;
-}
-
-
-/* Estilos para as caixas de serviço */
 .service-box {
-    border: 2px solid #3498db;
-    border-radius: 10px;
-    background-color: rgba(52, 152, 219, 0.2);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    margin: 1%;
+    border-color: #9b59b6;
+    border-radius: 8px;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
-}
-
-.service-box img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombreamento */
-}
-
-.service-box h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #3498db;
-}
-
-.service-box p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .service-box:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.service-box:hover h3 {
+    background-color: #9b59b6;
+    ;
     color: #fff;
+    transform: translateY(-5px);
 }
 
-.service-box .btn {
-    background-color: #3498db;
-    color: #fff;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.service-box img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
-.service-box .btn:hover {
-    background-color: #2980b9;
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+/* Caixas de projeto */
 
-/* Estilos para os blocos de projeto */
 .project-box {
+    display: inline-block;
+    width: 45%;
+    margin: 1%;
     border: 2px solid #9b59b6;
-    border-radius: 10px;
-    background-color: rgba(155, 89, 182, 0.2);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
-}
-
-.project-box img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Adiciona sombreamento */
-}
-
-.project-box h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #9b59b6;
-}
-
-.project-box p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .project-box:hover {
-    background-color: #8e44ad;
-    transform: scale(1.05);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-box:hover h3 {
-    color: #fff;
-}
-
-.project-box .btn {
+    transform: translateY(-5px);
     background-color: #9b59b6;
     color: #fff;
-    border: 2px solid #9b59b6;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.project-box .btn:hover {
-    background-color: #8e44ad;
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Estilos para a seção "Contato" */
-#contato {
-    background-color: rgba(52, 152, 219, 0.2);
-    padding: 4rem 0;
-}
-
-.contact-info {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.contact-info i {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: #2ecc71;
-}
-
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.project-box img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-.contact-form textarea {
-    height: 150px;
-}
+/* Botão */
 
-.contact-form button {
-    background-color: #2ecc71;
+.btn {
+    display: inline-block;
+    background-color: #9b59b6;
+    ;
     color: #fff;
-    border: none;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: 0.3s;
 }
 
-.contact-form button:hover {
-    background-color: #27ae60;
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.btn:hover {
+    background-color: #bc06c2;
 }
 
-
-
-/* Estilos para o botão "Página Inicial" */
-.gg-website {
-    transform: scale(var(--ggs, 1));
-    width: 22px;
-    height: 18px;
-    border: 2px solid;
-    border-radius: 3px;
-    box-shadow: 0 -1px 0;
+/* Rodapé */
+footer {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 2rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para o botão "Sobre" */
-.gg-info {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-radius: 40px;
+footer a {
+    color: #8c62aa;
 }
 
-/* Estilos para o botão "Serviços" */
-.gg-toolbox {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 22px;
-    height: 16px;
-    border: 2px solid;
-    border-radius: 2px;
+footer a:hover {
+    opacity: .8;
 }
-
-/* Estilos para o botão "Projetos" */
-.gg-folder {
-    transform: scale(var(--ggs, 1));
-    width: 22px;
-    height: 16px;
-    border: 2px solid;
-    border-radius: 3px;
-}
-
-/* Estilos para o botão "Contato" */
-.gg-phone {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 22px;
-    height: 22px;
-    transform: scale(var(--ggs, 1));
-}
-/* NK_dev */

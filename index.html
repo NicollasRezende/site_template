@@ -1,5 +1,3 @@
-
-<!-- NK_dev -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,96 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Empresa</title>
-    <link rel="icon" href="favincon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/website.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/info.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/folder.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/toolbox.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Minha Empresa</h1>
+        <h1>Bem-vindo à Minha Empresa</h1>
+
+
         <nav>
             <ul>
-                <li><a href="#home" class="btn-icon gg-website"><i class="gg-icon gg-website"></i></a></li>
-                <li><a href="#sobre" class="btn-icon gg-info"><i class="gg-icon gg-info"></i></a></li>
-                <li><a href="#servicos" class="btn-icon gg-toolbox"><i class="gg-icon gg-toolbox"></i></a></li>
-                <li><a href="#projetos" class="btn-icon gg-folder"><i class="gg-icon gg-folder"></i></a></li>
-                <li><a href="#contato" class="btn-icon gg-phone"><i class="gg-icon gg-phone"></i></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
     </header>
-
     <main>
-        <section id="home" class="section" style="background-image: url('sua-imagem.jpg');">
-            <h2>Bem-vindo à Minha Empresa</h2>
-            <p>Somos especializados em oferecer soluções incríveis.</p>
-            <a href="#" class="btn">Saiba Mais</a>
+
+        <section id="home">
+            <h2>Soluções para seu negócio</h2>
+            <p>Somos especialistas em criar soluções sob medida para nosso clientes.</p>
+            <a href="#servicos" class="btn">Conheça nossos serviços</a>
         </section>
-        <section id="sobre" class="section dark-bg">
-            <h2>Sobre Nós</h2>
-            <p>Nossa empresa tem uma história incrível.</p>
-        </section>
+
         <section id="servicos" class="section">
-            <h2>Serviços</h2>
-            <p>Oferecemos uma variedade de serviços de alta qualidade.</p>
+            <h2>Nossos Serviços</h2>
+
             <div class="service-box">
-                <h3>Serviço 1</h3>
-                <p>Descrição do Serviço 1.</p>
-                <a href="#" class="btn">Saiba Mais</a>
+                <img src="service1.png" alt="Serviço 1">
+                <h3>Consultoria</h3>
+                <p>Oferecemos consultoria especializada para seu negócio crescer.</p>
             </div>
+
             <div class="service-box">
-                <h3>Serviço 2</h3>
-                <p>Descrição do Serviço 2.</p>
-                <a href="#" class="btn">Saiba Mais</a>
+                <img src="service2.png" alt="Serviço 2">
+                <h3>Desenvolvimento de Sites</h3>
+                <p>Desenvolvemos sites modernos e otimizados para seus negócios.</p>
             </div>
+
             <div class="service-box">
-                <h3>Serviço 3</h3>
-                <p>Descrição do Serviço 3.</p>
-                <a href="#" class="btn">Saiba Mais</a>
+                <img src="service3.png" alt="Serviço 3">
+                <h3>Marketing Digital</h3>
+                <p>Fazemos campanhas de marketing digital eficientes para seu negócio.</p>
             </div>
+
         </section>
-        <section id="projetos" class="section dark-bg">
-            <h2 class="section-title">Projetos</h2>
-            <p>Confira alguns dos nossos projetos recentes.</p>
-            <div class="project-buttons">
-                <div class="project-box">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do Projeto 1.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-                <div class="project-box">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do Projeto 2.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-                <div class="project-box">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do Projeto 3.</p>
-                    <a href="#" class="btn">Saiba Mais</a>
-                </div>
-                <!-- Adicione mais botões conforme necessário -->
+
+        <section id="projetos" class="section">
+            <h2>Nossos Projetos</h2>
+
+            <div class="project-box">
+                <img src="project1.jpg" alt="Projeto 1">
+                <h3>Site para Clínica Médica</h3>
+                <p>Desenvolvemos este site moderno e responsivo para uma clínica.</p>
             </div>
-            <div class="project-carousel">
-                <!-- Seus projetos aqui -->
+
+            <div class="project-box">
+                <img src="project2.jpg" alt="Projeto 2">
+                <h3>E-commerce para Loja de Roupas</h3>
+                <p>Ajudamos esta loja a aumentar suas vendas com um novo e-commerce.</p>
             </div>
+
         </section>
-        <section id="contato" class="section">
+
+        <section id="contato">
             <h2>Entre em Contato</h2>
-            <p>Estamos ansiosos para ouvir de você.</p>
+            <p>Entre em contato para saber mais sobre nossos serviços e projetos.</p>
+            <a href="mailto:contato@minhaempresa.com" class="btn">contato@minhaempresa.com</a>
         </section>
+
     </main>
-
     <footer>
-        <p>&copy; 2023 NK_dev. Todos os direitos reservados.</p>
+        <p>&copy; 2021 Minha Empresa</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
-<!-- NK_dev -->
